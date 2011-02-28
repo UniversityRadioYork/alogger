@@ -1,24 +1,22 @@
-#!/usr/bin/env python
+#! /usr/bin/env python
 
-"""
-Audio Logger, a program that logs audio form the soundcard with 
-a set of useful features.
-Copyright (C) 2010 Gareth Andrew Lloyd
-
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-"""
+# Audio Logger, a program that logs audio form the soundcard with 
+# a set of useful features.
+# Copyright (C) 2010 Gareth Andrew Lloyd
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 from subprocess import Popen, PIPE
 from time import time, sleep
@@ -181,10 +179,12 @@ class Logger:
       logfile.close()
 
 if __name__ == "__main__":
-  stdout.write("Audio Logger prealpha, Copyright (C) 2010 Gareth Andrew Lloyd\n")
-  stdout.write("Audio Logger comes with ABSOLUTELY NO WARRANTY.  This is free\n") 
-  stdout.write("software, and you are welcome to redistribute it under certain\n")
-  stdout.write("conditions. For full information see the GPLv2 licence online.\n\n")
+  stdout.write("""\
+Audio Logger prealpha, Copyright (C) 2010 Gareth Andrew Lloyd
+Audio Logger comes with ABSOLUTELY NO WARRANTY.  This is free 
+software, and you are welcome to redistribute it under certain
+conditions. For full information see the GPLv2 licence online.
+""")
 
   try:
     l = Logger(chunkseconds=5, logmaxage=60)
