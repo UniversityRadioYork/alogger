@@ -5,4 +5,4 @@ alogger-$(TAR_VER) : $(TAR_INC)
 	tar -cvzf alogger-$(TAR_VER).tar.gz $(TAR_INC) 
 
 clean:
-	rm -f alogger-*.tar.gz *.raw
+	rm -f alogger-*.tar.gz *.raw *.pyc
