@@ -1,0 +1,60 @@
+This is Audio Logger Prealpha-1
+===============================
+
+Copyright (c) 2010, 2011 Gareth Andrew Lloyd
+
+Audio Logger is a unix tool for logging audio from ALSA 
+device. The feature set is developed for the primary 
+use in a radio station.
+
+
+Build Instructions
+------------------
+
+On Unix, Linux, BSD, OSX, and Cygwin:
+
+    ** No build exists as yet, files come as is **
+
+
+What's New
+----------
+
+This is prealpha nothing new yet?!
+
+
+Documentation
+-------------
+
+Hopfully I'll get a wiki together as features are being developed.
+
+
+Issue/Feature Tracker
+---------------------
+
+All bug reports are being done via sourceforge.  Please use 
+the issue tracker:
+
+    https://sourceforge.net/tracker/?group_id=506427
+
+
+Copyright and License Information
+---------------------------------
+
+Copyright (C) 2010, 2011 Gareth Andrew Lloyd
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be 
+useful, but WITHOUT ANY WARRANTY; without even the implied 
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR 
+PURPOSE.  See the GNU General Public License for more 
+details.
+
+You should have received a copy of the GNU General Public 
+License along with this program; if not, write to the Free 
+Software Foundation, Inc., 51 Franklin Street, Fifth Floor, 
+Boston, MA  02110-1301, USA.
+

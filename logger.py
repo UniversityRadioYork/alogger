@@ -2,7 +2,7 @@
 
 # Audio Logger, a program that logs audio form the soundcard with 
 # a set of useful features.
-# Copyright (C) 2010 Gareth Andrew Lloyd
+# Copyright (C) 2010, 2011 Gareth Andrew Lloyd
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -180,7 +180,7 @@ class Logger:
 
 if __name__ == "__main__":
   stdout.write("""\
-Audio Logger prealpha, Copyright (C) 2010 Gareth Andrew Lloyd
+Audio Logger prealpha, Copyright (C) 2010, 2011 Gareth Andrew Lloyd
 Audio Logger comes with ABSOLUTELY NO WARRANTY.  This is free 
 software, and you are welcome to redistribute it under certain
 conditions. For full information see the GPLv2 licence online.

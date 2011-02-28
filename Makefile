@@ -1,4 +1,4 @@
-TAR_INC = logger.py .git version Makefile .gitignore
+TAR_INC = logger.py .git version Makefile .gitignore README
 TAR_VER = `cat version`
 
 alogger-$(TAR_VER) : $(TAR_INC)
