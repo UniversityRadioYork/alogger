@@ -184,6 +184,7 @@ Audio Logger prealpha, Copyright (C) 2010, 2011 Gareth Andrew Lloyd
 Audio Logger comes with ABSOLUTELY NO WARRANTY.  This is free 
 software, and you are welcome to redistribute it under certain
 conditions. For full information see the GPLv2 licence online.
+
 """)
 
   try:
