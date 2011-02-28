@@ -1,4 +1,24 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+
+"""
+Audio Logger, a program that logs audio form the soundcard with 
+a set of useful features.
+Copyright (C) 2010 Gareth Andrew Lloyd
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+"""
 
 from subprocess import Popen, PIPE
 from time import time, sleep
@@ -9,10 +29,7 @@ from re import match
 from struct import unpack_from
 
 #import audiotools
-
-#import imp
-#imp.load_source('pyaudio','./pyaudio-git/src/pyaudio.py')
-#import pyaudio
+#import alsaaudio
 
 class Logger:
 
@@ -164,6 +181,11 @@ class Logger:
       logfile.close()
 
 if __name__ == "__main__":
+  stdout.write("Audio Logger prealpha, Copyright (C) 2010 Gareth Andrew Lloyd\n")
+  stdout.write("Audio Logger comes with ABSOLUTELY NO WARRANTY.  This is free\n") 
+  stdout.write("software, and you are welcome to redistribute it under certain\n")
+  stdout.write("conditions. For full information see the GPLv2 licence online.\n\n")
+
   try:
     l = Logger(chunkseconds=5, logmaxage=60)
     l.run()
@@ -174,40 +196,6 @@ if __name__ == "__main__":
   # 2 bytes pairs constantly around 0x0000 hence 0xff00 -> 0x00ff is quite
   # 2 bytes pairs peaking ??? not sure what it looks like
 
-  # absolute the 16 bits to give 8 bits positive
+  # absolute the 16 bits to give 15 bits positive value
   # < 5% over 1 min then silence
   # > 85% over 1 min then peaking
-
-
-  """import pyaudio
-  import sys
-
-  chunk = 1024
-  FORMAT = pyaudio.paInt16
-  CHANNELS = 2
-  RATE = 44100
-  RECORD_SECONDS = 20
-
-  p = pyaudio.PyAudio()
-
-  stream = p.open(format = FORMAT,
-                  channels = CHANNELS, 
-                  rate = RATE, 
-                  input = True,
-                  output = False,
-                  frames_per_buffer = chunk)
-
-  print "* recording"
-  for i in range(0, 44100 / chunk * RECORD_SECONDS):
-      data = stream.read(chunk)
-      # check for silence here by comparing the level with 0 (or some threshold) for 
-      # the contents of data.
-      # then write data or not to a file
-
-  print "* done"
-
-  stream.stop_stream()
-  stream.close()
-  p.terminate()"""
-
-
