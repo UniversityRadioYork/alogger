@@ -1,0 +1,31 @@
+ALOGGER(1)
+=========
+Gareth Andrew Lloyd
+
+
+NAME
+----
+alogger - an audio logger with useful features
+
+
+SYNOPSIS
+--------
+'alogger' [options] <directory>
+
+
+AUTHOR
+------
+Written by Gareth Andrew Lloyd
+
+
+RESOURCES
+---------
+Web site: http://sourceforge.net/projects/alogger/[]
+
+
+COPYING
+-------
+Copyright \(C) 2010-2011 Gareth Andrew Lloyd. Free use of this software is
+granted under the terms of the GNU General Public License (GPL).
+
+
